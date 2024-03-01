@@ -1,41 +1,41 @@
 import React from "react";
 import "./Card3.css"
 import photo from "../Assets/Untitled.jpeg"
-const Card3 = () => {
+const Card3 = (props) => {
     return (
         <div>
-            <div class="container">
+            <div className="container">
 
-                <div class="card-wrapper">
+                <div className="card-wrapper">
 
-                    <div class="card">
+                    <div className="card">
 
-                        <div class="card-image">
+                        <div className="card-image">
                             <img src={photo} alt="profile one"/>
                         </div>
 
-                        <ul class="social-icons">
+                        <ul className="social-icons">
                             <li>
                                 <a href="">
-                                    <i class="ion-social-reddit-outline"></i>
+                                    <i className="ion-social-reddit-outline"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <i class="ion-social-twitter-outline"></i>
+                                    <i className="ion-social-twitter-outline"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <i class="ion-social-vimeo-outline"></i>
+                                    <i className="ion-social-vimeo-outline"></i>
                                 </a>
                             </li>
                         </ul>
 
-                        <div class="details">
-                            <h2>Shubham Ahirwar
+                        <div className="details">
+                            <h2>{props.name}
                                 <br/>
-                                    <span class="job-title">Core</span>
+                                    <span className="job-title">{props.position}</span>
                             </h2>
                         </div>
                     </div>
