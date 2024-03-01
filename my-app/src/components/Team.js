@@ -1,11 +1,11 @@
-const teams = {"Team 1":}
+// const teams = {"Team 1":}
 
-const Team = (props) => {
-    return (
-        <>
-        
-        </>
-    )
-}
+// const Team = (props) => {
+//     return (
+//         <>
 
-export default Team;
+//         </>
+//     )
+// }
+
+// export default Team;

@@ -7,7 +7,7 @@ const Card1 = (props) => {
             <figure class="snip1344"><img src={photo}alt="profile-sample1" class="background" /><img src={photo} alt="profile-sample1" class="profile" />
                 <figcaption>
                     <h3>{props.name}<span>{props.position}</span></h3>
-                    <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a><a href="#"> <i class="ion-social-twitter-outline"></i></a><a href="#"> <i class="ion-social-vimeo-outline"></i></a></div>
+                    <div class="icons"><a href="#"><i class="ion-social-linkedin-outline"></i></a><a href="#"> <i class="ion-social-twitter-outline"></i></a><a href="#"> <i class="ion-social-instagram-outline"></i></a></div>
                 </figcaption>
             </figure>
         </div>
