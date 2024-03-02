@@ -2,3 +2,13 @@
     display: flex;
     flex-direction: row;
 }
+.team-members{
+    display: flex;
+    justify-content: space-evenly;
+}
+.team-decription{
+    width: 40%;
+    h2 {
+        margin-top: 15%;
+    }
+}
