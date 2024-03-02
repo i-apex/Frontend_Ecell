@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/footer';
+import Navbar from './components/navbar';
 import Card1 from './components/Card1';
 import Card2 from './components/Card2';
 import Card3 from './components/Card3';
@@ -51,6 +52,8 @@ function App() {
       </div>
       {/* <div style={{ display: 'block' }}> <Cards></Cards></div> */}
       {/* <Card2></Card2> */}
+    <Footer></Footer>
+    <Navbar></Navbar>
 
     </>
   );
