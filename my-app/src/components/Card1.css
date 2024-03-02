@@ -8,6 +8,8 @@
   margin: 10px;
   min-width: 230px;
   max-width: 395px;
+  height: 300px;
+  max-height: 395px;
   width: 100%;
   color: #ffffff;
   text-align: center;
@@ -15,6 +17,12 @@
   background-color: #353535;
   border-radius: 1rem;
   box-shadow: rgba(87, 98, 255, 0.267) 5px 5px 30px;
+  padding:0;
+  margin: 0;
+  img{
+    object-fit: cover;
+    object-position: 25% 25%; 
+  }
 }
 .snip1344 * {
   -webkit-box-sizing: border-box;
@@ -30,6 +38,8 @@
   filter: blur(10px);
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
+  padding:0;
+  margin: 0;
 }
 .snip1344 figcaption {
   visibility: hidden;
@@ -40,7 +50,7 @@
   top: 50%;
 }
 .snip1344 .profile {
-  border-radius: 50%;
+  border-radius: 100%;
   position: absolute;
   bottom: 50%;
   left: 50%;

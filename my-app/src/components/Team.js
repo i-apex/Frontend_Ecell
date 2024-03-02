@@ -12,7 +12,7 @@ const Team = (props) => {
                 </div>
                 <div className="team-members">
                     {props.team_members.map((members) => {
-                        return <Card1 name={members.Name} position={members.Position}></Card1>
+                        return <Card1 name={members.Name} position={members.Position} photo={members.Photo}></Card1>
                     })}
                 </div>
             </div>

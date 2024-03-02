@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card3.css"
-import photo from "../Assets/Untitled.jpeg"
+import photo from "../Assets/Untiteled.jpg"
 const Card3 = (props) => {
     return (
         <div>
