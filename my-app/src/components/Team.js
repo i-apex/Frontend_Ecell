@@ -12,7 +12,7 @@ const Team = (props) => {
                 </div>
                 {props.team_members.map((members) => {
                     if (members.Position == "Lead") {
-                        return <Card3 name={members.Name} position={members.Position}></Card3>
+                        return <Card1 name={members.Name} position={members.Position}></Card1>
                     } else
                         return <Card1 name={members.Name} position={members.Position}></Card1>
                 })}

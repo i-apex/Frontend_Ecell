@@ -1,12 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .snip1344 {
+  
   font-family: 'Open Sans', Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
   min-width: 230px;
-  max-width: 315px;
+  max-width: 395px;
   width: 100%;
   color: #ffffff;
   text-align: center;
@@ -25,12 +26,13 @@
   width: 100%;
   vertical-align: top;
   opacity: 0.4;
-  -webkit-filter: grayscale(100%) blur(10px);
-  filter: grayscale(100%) blur(10px);
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
 .snip1344 figcaption {
+  visibility: hidden;
   width: 100%;
   padding: 15px 25px;
   position: absolute;
@@ -49,6 +51,7 @@
   border: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
+  
 }
 .snip1344 h3 {
   margin: 0 0 5px;
@@ -78,6 +81,23 @@
 }
 .snip1344:hover .background,
 .snip1344.hover .background {
+
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+  -webkit-filter:  blur(1px);
+  filter:  blur(0px);
+  
+
+}
+.snip1344:hover .profile {
+  visibility: collapse;
+  width: 100%;
+  transition-delay: 0.1s;
+
+  /* transition: all 2s ease; */
+}
+.snip1344:hover figcaption {
+  visibility: visible;
+  transition-delay: 0.1s;
+  /* transition: all 2s ease; */
 }
