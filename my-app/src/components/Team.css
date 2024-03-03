@@ -1,7 +1,9 @@
 .team-div{
     display: flex;
     flex-direction: row;
+    
 }
+
 .team-members{
     display: flex;
     justify-content: space-evenly;

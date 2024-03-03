@@ -5,6 +5,7 @@ import "./Team.css";
 const Team = (props) => {
     return (
         <>
+        <div id="container">
             <div className="team-div">
                 <div className="team-decription">
                         <h2 style={{ color: "white" }}>{props.team_name}</h2>
@@ -15,6 +16,7 @@ const Team = (props) => {
                         return <Card1 name={members.Name} position={members.Position} photo={members.Photo}></Card1>
                     })}
                 </div>
+            </div>
             </div>
         </>
     )

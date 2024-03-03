@@ -2,7 +2,6 @@ import './App.css';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Card1 from './components/Card1';
-import Card2 from './components/Card2';
 import Card3 from './components/Card3';
 import Cards from './components/Cards';
 import Team from './components/Team';
@@ -45,6 +44,8 @@ const teams = [{ Team_name: "Management and Logistics Team", Team_members: [{ Na
 function App() {
   return (
     <>
+        <Navbar></Navbar>
+
       <div className="App">
         <div className="abc"><Card3></Card3></div>
         {teams.map((team) => { return <Team team_name={team.Team_name} team_members={team.Team_members}></Team> })}
@@ -53,7 +54,6 @@ function App() {
       {/* <div style={{ display: 'block' }}> <Cards></Cards></div> */}
       {/* <Card2></Card2> */}
     <Footer></Footer>
-    <Navbar></Navbar>
 
     </>
   );
