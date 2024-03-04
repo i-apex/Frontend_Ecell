@@ -47,8 +47,9 @@ function App() {
         <Navbar></Navbar>
 
       <div className="App">
-        <div className="abc"><Card3></Card3></div>
-        {teams.map((team) => { return <Team team_name={team.Team_name} team_members={team.Team_members}></Team> })}
+        <h1 style={{color:'white'}}>HEAD</h1>
+        <div className="abc"><Card3 name={"Vaibhav Mishra"} position={"Head"}></Card3></div>
+        {teams.map((team,index) => { return <Team team_name={team.Team_name} team_members={team.Team_members} key={index}></Team> })}
 
       </div>
       {/* <div style={{ display: 'block' }}> <Cards></Cards></div> */}

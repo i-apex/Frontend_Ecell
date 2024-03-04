@@ -42,14 +42,17 @@
   margin: 0;
 }
 .snip1344 figcaption {
-  visibility: hidden;
+  /* visibility: hidden; */
   width: 100%;
   padding: 15px 25px;
   position: absolute;
   left: 0;
   top: 50%;
 }
-.snip1344 .profile {
+.profile {
+  width: 150px;
+  max-height: 130px;
+  object-fit: cover;
   border-radius: 100%;
   position: absolute;
   bottom: 50%;
@@ -100,17 +103,20 @@
 
 }
 .snip1344:hover .profile {
+  position: absolute;
+  /* transform: translate(10%); */
   visibility: collapse;
-  width: 100%;
-  transition-delay: 0.1s;
+  transition-delay: 0.0s;
 
   /* transition: all 2s ease; */
 }
-.snip1344:hover figcaption {
+
+/* .snip1344:hover figcaption {
   visibility: visible;
   transition-delay: 0.1s;
-  /* transition: all 2s ease; */
-}
+  transition: all 2s ease;
+} */
 .card1-container{
   margin: 3%;
+  transform: translate(-15%);
 }
