@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 export default function Navbar () {
   return (
@@ -16,7 +17,7 @@ export default function Navbar () {
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-lg-5 me-lg-auto" id='ul'>
                 <li className="nav-item">
-                    <a className="nav-link click-scroll text-white" href="#section_1">Home</a>
+                    <Link to="/" style={{textDecoration:"none"}}><a className="nav-link click-scroll text-white">Home</a></Link>
                 </li>
 
                 <li className="nav-item">
@@ -32,7 +33,7 @@ export default function Navbar () {
                 </li>
 
                 <li className="nav-item">
-                    <a className="nav-link click-scroll text-white" href="#section_5">Contact</a>
+                    <Link to="/Team" style={{textDecoration:"none"}}><a className="nav-link click-scroll text-white" >Team</a></Link>
                 </li>
             </ul>
 
