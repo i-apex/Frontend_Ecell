@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import Logo from '../Assets/Logo.png'
 export default function Navbar () {
   return (
     <nav className="navbar navbar-expand-lg" id="navbar">
     <div className="container">
         <a className="navbar-brand" href="index.html">
             <i className="bi-back"></i>
-            <span className='text-white'>Topic</span>
+            <span className='text-white'><img src={Logo} width="50px" height="50px"/></span>
         </a>
 
         <div className="d-lg-none ms-auto me-4">
@@ -21,19 +22,19 @@ export default function Navbar () {
                 </li>
 
                 <li className="nav-item">
-                    <a className="nav-link click-scroll text-white" href="#section_2">Browse Topics</a>
+                    <Link to="/Events" style={{textDecoration:"none"}}><a className="nav-link click-scroll text-white" >Events</a></Link>
                 </li>
 
                 <li className="nav-item">
-                    <a className="nav-link click-scroll text-white" href="#section_3">How it works</a>
-                </li>
-
-                <li className="nav-item">
-                    <a className="nav-link click-scroll text-white" href="#section_4">FAQs</a>
+                    <Link to="/Innovations" style={{textDecoration:"none"}}><a className="nav-link click-scroll text-white" >Innovations</a></Link>
                 </li>
 
                 <li className="nav-item">
                     <Link to="/Team" style={{textDecoration:"none"}}><a className="nav-link click-scroll text-white" >Team</a></Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link to="/Blogs" style={{textDecoration:"none"}}><a className="nav-link click-scroll text-white" >Blogs</a></Link>
                 </li>
             </ul>
 
