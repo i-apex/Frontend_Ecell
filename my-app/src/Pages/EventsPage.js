@@ -1,17 +1,32 @@
 import React from "react";
 import EventCard from "../components/EventCard";
+import { useState } from "react";
+import RegPopup from "../components/RegPopup";
 
 function EventsPage() {
+    const [regPopup, setRegpopup] = useState(false);
+    const [eventName, setEventName] = useState("");
+    const callPopup = (eventName) => {
+        setRegpopup(true);
+        setEventName(eventName);
+
+        // document.body.style.overflow = 'hidden';
+    }
+    const closePopup = () => {
+        setRegpopup(false);
+        document.body.style.overflow = 'visible';
+    }
     return (
         <>
-        <EventCard index="1" / >
-        <br />
-        <EventCard index="2" / >
-        <br />
-        <EventCard index="3" / >
-        <br />
-        <EventCard index="4" / >
-        <br />
+            <div>
+                <RegPopup eventName={eventName} trigger={regPopup} closePopup={closePopup} />
+                <EventCard callPopup={callPopup} />
+                <EventCard callPopup={callPopup} />
+                <EventCard callPopup={callPopup} />
+                <EventCard callPopup={callPopup} />
+                <EventCard callPopup={callPopup} />
+
+            </div>
         </>
     );
 }

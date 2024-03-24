@@ -46,7 +46,6 @@ function TeamPage() {
                 <div style={{display:'flex',justifyContent:'center'}}><Card3 name={"Vaibhav Mishra"} position={"Head"}></Card3></div>
                 {teams.map((team, index) => { return <Team team_name={team.Team_name} team_members={team.Team_members} key={index}></Team> })}
             </div>
-            <Footer></Footer>
 
         </>
     );
