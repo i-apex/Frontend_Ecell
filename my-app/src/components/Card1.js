@@ -5,7 +5,7 @@ const Card1 = (props) => {
     console.log(props.key_prop)
     return (
         
-        <div className={"card1-container my-[3%] md:m-[3%]"} id={"key-"+props.key_prop}>
+        <div className={"card1-container sm:mx-auto my-[3%]  md:mx-10 w-fit"} id={"key-"+props.key_prop}>
             <figure className="snip1344 w-[250px] h-[250px] md:w-full max-w-[395px] md:max-h-[395px] md:h-[300px]"><img src={props.photo} alt="profile-sample1" className="background" /><img src={props.photo} alt="profile-sample1" className="profile mt-10 w-130px max-h-90px md:w-[150px] md:max-h-[130px]" />
                 <figcaption>
                     <h3 style={{fontSize:'large'}}>{props.name}<span>{props.position}</span></h3>

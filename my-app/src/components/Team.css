@@ -1,19 +1,21 @@
-
-
 .team-div-wrapper {
     margin-top: 8%;
 }
 
-.team-div-animation {
+@media (min-width: 650px) {
 
-    /* transform: translate(0px, 20px) scale(1); */
-    transition: 2s;
-    animation: fadeIn 2s ease-in-out;
-    animation-timeline: view();
 
-    .card1-container {
-        transform: translate(15%);
-        /* transition: 2s;  */
+    .team-div-animation {
+
+        /* transform: translate(0px, 20px) scale(1); */
+        transition: 2s;
+        animation: fadeIn 2s ease-in-out;
+        animation-timeline: view();
+
+        .card1-container {
+            transform: translate(15%);
+            /* transition: 2s;  */
+        }
     }
 }
 
