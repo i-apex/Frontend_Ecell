@@ -15,16 +15,17 @@ module.exports = {
           // '50': {transform: 'translateX(10rem)', opacity: 0.4},
           '100%': {transform: 'translateX(0rem)', opacity: 1}
         },
-        spin_270: {
-          '0%': {transform: 'rotate(0deg)'},
+        slidein_b: {
+          '0%': {transform: 'translateY(3rem)', opacity: 0},
+          '50%': {transform: 'translateY(3rem)', opacity: 0},
           // '50': {transform: 'translateX(10rem)', opacity: 0.4},
-          '100%': {transform: 'rotate(270deg)', opacity: 1}
+          '100%': {transform: 'translateY(0rem)', opacity: 1}
         }
       },
       animation: {
         fall: 'fall 1s',
         slidein: 'slidein 1.5s',
-        spin_270: 'spin_270 3s linear'
+        slidein_b: 'slidein_b 1.5s'
       }
     },
   },
