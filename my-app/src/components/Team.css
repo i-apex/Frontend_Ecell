@@ -1,11 +1,4 @@
-.team-div {
-    display: flex;
-    flex-direction: row;
-    /* animation: fadeIn 2s ease-in;
-    animation-timeline: view(); */
-    /* transform: scale(0.8);
-    opacity: 10%; */
-}
+
 
 .team-div-wrapper {
     margin-top: 8%;
@@ -55,11 +48,9 @@
 
 .team-members {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .team-decription {
-    width: 40%;
 
     h1 {
 

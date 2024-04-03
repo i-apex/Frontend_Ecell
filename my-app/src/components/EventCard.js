@@ -38,7 +38,7 @@ const EventCard = (props) => {
                                     <h1 className="text-lg h-fit  pt-1">Register</h1>
                                 </button>
                                 {/* <button onClick={() => Expand()} type="button" className="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">{dynamic==info ? "Show Less" : "More Info"}</button> */}
-                                <button onClick={() => Expand()} class="bg-blue-800 text-white duration-300 font-bold w-48 flex flex-row justify-between py-2 mx-5 px-4 rounded-full">
+                                <button onClick={() => Expand()} class="bg-blue-800 text-white duration-300 font-bold w-48 flex flex-row justify-between py-2 mx-1 px-4 rounded-full">
                                     <h1 className="text-lg h-fit  pt-1">More Info</h1>
                                     {dynamic == info ?<svg fill="white" className="w-fil h-10 rotate-[270deg]" viewBox="0 0 24 24">
                                         <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd" />

@@ -6,11 +6,6 @@
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 230px;
-  max-width: 395px;
-  height: 300px;
-  max-height: 395px;
-  width: 100%;
   color: #ffffff;
   text-align: center;
   line-height: 1.4em;
@@ -50,8 +45,6 @@
   top: 50%;
 }
 .profile {
-  width: 150px;
-  max-height: 130px;
   object-fit: cover;
   border-radius: 100%;
   position: absolute;
@@ -116,7 +109,4 @@
   transition-delay: 0.1s;
   transition: all 2s ease;
 } */
-.card1-container{
-  margin: 3%;
-  transform: translate(-15%);
-}
+
