@@ -1,92 +1,71 @@
 import './footer.css';
-import Logo from '../Assets/Logo.png'
-export default function Footer (){
-    return(
-        <div className="bg-secondary pt-4" id="footer">
-        <div className="container">
-            <div className="row py-4">
+import Logo from '../Assets/e_cell_logo.png'
+import facebook_logo from '../Assets/facebook.png'
+import instagram_logo from '../Assets/instagram.png'
+import linkedin_logo from '../Assets/linkedin.png'
+import X_logo from '../Assets/X.png'
+import phone_logo from '../Assets/phone.png'
+import location_logo from '../Assets/location.png'
+import mail_logo from '../Assets/mail.png'
 
-                <div className="col-lg-3 col-12 align-left">
-                    <a className="navbar-brand" href="index.html">
-                        <i className='bx bx-buildings bx-sm text-light'></i>
-                        <span className="text-light h5">E-Cell</span> 
-                    </a>
-                    <p className="text-light my-lg-4 my-2">
-                        <img src={Logo} width="30px" height="30px"></img>
-                    </p>
-                    <ul className="list-inline footer-icons light-300">
-                        <li className="list-inline-item m-0">
-                            <a className="text-light" target="_blank" href="http://facebook.com/">
-                                <i className='bx bxl-facebook-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li className="list-inline-item m-0">
-                            <a className="text-light" target="_blank" href="https://www.linkedin.com/">
-                                <i className='bx bxl-linkedin-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li className="list-inline-item m-0">
-                            <a className="text-light" target="_blank" href="https://www.whatsapp.com/">
-                                <i className='bx bxl-whatsapp-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li className="list-inline-item m-0">
-                            <a className="text-light" target="_blank" href="https://www.flickr.com/">
-                                <i className='bx bxl-flickr-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li className="list-inline-item m-0">
-                            <a className="text-light" target="_blank" href="https://www.medium.com/">
-                                <i className='bx bxl-medium-square bx-md' ></i>
-                            </a>
-                        </li>
-                    </ul>
+export default function Footer() {
+    return (
+        <div className="bg-blue-700 p-4 pb-0 text-white" id="footer">
+            <div className='md:flex justify-between ml-0'>
+                <div className='md:w-1/3 [&>a]:md:text-3xl [&>a]:text-xl [&>a]:pb-2 [&>a]:block '>
+                    <h1 className='text-2xl md:text-4xl pb-4 font-extrabold'>Quick links</h1>
+                    <a>Events</a>
+                    <a>Team</a>
+                    <a>Collaborate</a>
                 </div>
+                <div className='md:w-1/3 my-10 md:my-0 text-center '>
+                    <div className='flex justify-center row'>
+                        <div className='flex w-fit'>
+                            <div className='relative'>
+                                {/* <div className='w-20 h-20  relative bg-white rounded-full'></div> */}
+                                <div className='mt-[0.75rem] md:mt-0'>
+                                    <img src={Logo} className='w-24  z-10'></img>
+                                </div>
+                            </div>
+                            <div className='w-2 rounded-sm mx-4 bg-white'></div>
+                            <div>
+                                <h1 className='mt-[5%] font-extrabold text-2xl'>Entrepreneurship Cell</h1>
+                                <h1 className='font-extrabold text-2xl'>IIT Tirupati</h1>
+                            </div>
+                        </div>
+                        <div className='flex justify-center mt-16 [&>img]:px-2 '>
+                            <img src={facebook_logo}></img>
+                            <img src={instagram_logo}></img>
+                            <img src={X_logo}></img>
+                            <img src={linkedin_logo}></img>
+                        </div>
 
-                <div className="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 className="h4 pb-lg-3 text-light light-300">Our Initiatives</h3>
-                        <ul className="list-unstyled text-light light-300">
-                            <li className="pb-2">
-                                <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light" href="index.html">E-Summit</a>
-                            </li>
-                            <li className="pb-2">
-                                <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="about.html">IITT - NIF</a>
-                            </li>
-                        </ul>
+                    </div>
+                </div >
+                <div className='md:w-1/3 relative text-end'>
+                    <div className='flex relative col md:justify-end pb-3'>
+                        <img src={location_logo} className='h-10 relative top-4'></img>
+                        <div className=' text-wrap text-start pl-6 text-2xl w-64'>E-Cell Office, CIF building, IIT Tirupati, AP (517619)</div>
+                    </div>
+                    <div className='flex relative col md:justify-end pb-3'>
+                        <img src={mail_logo} className='h-10 relative -top-1'></img>
+                        <div className=' text-wrap pl-6 text-start text-2xl w-64'>ecell@iittp.ac.in</div>
+                    </div>
+                    <div className='flex relative col md:justify-end pb-2'>
+                        <img src={phone_logo} className='h-10 relative -top-1'></img>
+                        <div className=' text-wrap pl-6 text-start text-2xl w-64'>+91 7830190433</div>
+                    </div>
                 </div>
-
-                <div className="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 className="h4 pb-lg-3 text-light light-300">Useful Links</h2>
-                    <ul className="list-unstyled text-light light-300" id="work_things">
-                        <li className="pb-2">
-                            <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">Home</a>
-                        </li>
-                        <li className="pb-2">
-                            <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">About Us</a>
-                        </li>
-                        <li className="pb-2">
-                            <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">E-Cell Blog</a>
-                        </li>
-                        <li className="pb-2">
-                            <i className='bx-fw bx bxs-chevron-right bx-xs'></i><a className="text-decoration-none text-light py-1" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 className="h4 pb-lg-3 text-light light-300">Contact</h2>
-                    <ul className="list-unstyled text-light light-300">
-                        <li className="pb-2">
-                            <i className='bx-fw bx bx-phone bx-xs'></i><a className="text-decoration-none text-light py-1" href="tel:010-020-0340">010-020-0340</a>
-                        </li>
-                        <li className="pb-2">
-                            <i className='bx-fw bx bx-mail-send bx-xs'></i><a className="text-decoration-none text-light py-1" href="mailto:info@company.com">info@company.com</a>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
-        </div>
+
+            <section className='flex mt-6 justify-between'>
+                <div className='inline-block '>
+                    <p className=''>Developed by WebOps Team | E-Cell IIT Tirupati</p>
+                </div>
+                <div className='inline-block text-end'>
+                    <p>@ E-cell IIT Tirupati. All Rights Reserved</p>
+                </div>
+            </section>
         </div>
 
     )

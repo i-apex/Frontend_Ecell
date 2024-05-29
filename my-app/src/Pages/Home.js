@@ -27,15 +27,15 @@ const Home = () => {
             </div>
             <section id="intro" className="h-[90vh]">
                 <div className="h-[20vh]">
-                    <h1 className="text-blue-700 text-center w-[100%] absolute mt-[38vh] mb-5 text-4xl md:text-8xl font-extrabold">ENTREPRENEURSHIP CELL</h1>
-                    <div className="flex justify-center">
-                        <h1 className="text-blue-700 text-center relative mt-[52vh] ml-6 mb-5 text-3xl md:text-6xl font-extrabold">IIT TIRUPATI</h1>
-                        <img className="relative w-10 md:w-20 mx-10 mt-[52vh] h-fit" src={plane_img}></img>
+                    <h1 className="text-blue-700 text-center w-[100%] absolute mt-[38vh] mb-5 text-4xl md:text-8xl font-extrabold animate-[slideinY_1s]">ENTREPRENEURSHIP CELL</h1>
+                    <div className="flex justify-center animate-[slideinY_1.5s]">
+                        <h1 className="text-blue-700 text-center mt-[52vh] ml-6 mb-5 text-3xl md:text-6xl font-extrabold ">IIT TIRUPATI</h1>
+                        <img className="relative w-10 md:w-20 ml-10 mt-[52vh] h-fit" src={plane_img}></img>
                     </div>
                 </div>
             </section>
             <div className="bg-blue-700 flex justify-center w-[100%] h-[10vh] z-10">
-                <h1 className="text-white mt-8 absolute text-center text-xl md:text-5xl">IDEATE  |  INNOVATE  |  IMPLEMENT</h1>
+                <h1 className="text-white mt-8 absolute text-center text-xl md:text-5xl animate-[slideinY_1.3s_ease-in]">IDEATE  |  INNOVATE  |  IMPLEMENT</h1>
             </div>
             {/* <h2 className="text-black m-5 text-3xl font-mono">ABOUT US</h2>
             <p className="text-black m-5 md:w-2/4 text-lg animate-slidein">The morning sun cast a warm glow over the sleepy town, gently coaxing its inhabitants to rise and embrace the day. Birds chirped cheerfully, their melodies weaving through the tranquil air. In the distance, the faint aroma of freshly brewed coffee wafted from a quaint café, inviting passersby to indulge in its comforting embrace. It was a moment of quiet serenity, a pause in the hustle and bustle of life, where time seemed to slow down and the simple joys of existence took center stage.</p>
