@@ -5,7 +5,7 @@ const InitiativeCard = (props) => {
                 <img alt="POSTER.."/>
             </div>
             <div className="flex w-full flex-col">
-                <h1 className="text-white mx-auto mt-10 text-3xl text-center font-normal">{props.name}</h1>
+                <h1 className="text-black mx-auto mt-10 text-3xl text-center font-normal">{props.name}</h1>
                 <div className="w-full h-96 flex flex-col justify-center sm:mx-auto my-4 md:mx-5 md:my-10 text-center bg-slate-950"><h1>content...</h1></div>
                 <button class="bg-blue-800 text-white hover:scale-110 transition-transform duration-300 font-bold w-48 flex flex-row justify-between py-2 mx-5 px-4 rounded-full">
                     <h1 className="text-lg h-fit  pt-1">More Info</h1><svg fill="white" className="w-fill h-10" viewBox="0 0 24 24">

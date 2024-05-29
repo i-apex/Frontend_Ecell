@@ -48,12 +48,12 @@ function EventsPage(props) {
         <>
             <div >  
                 <RegPopup eventName={eventName} trigger={regPopup} closePopup={closePopup} />
-                <div className="font-bold tracking-wide md:text-4xl  text-white text-center mb-5 mt-14 md:mt-32">EVENTS</div>
+                <div className="font-bold tracking-wide md:text-4xl  text-vlack text-center mb-5 mt-14 md:mt-32">EVENTS</div>
                 <div className=" w-full flex justify-center">
-                    <ul className="flex w-fit flex-row border-b border-gray-400 border-opacity-50 [&>li]:px-3 [&>li>button]:text-white md:[&>li]:text-xl">
-                        <li><button onClick={handleUpcoming} className="upcoming_btn border-b">Upcoming Events</button></li>
-                        <li><button onClick={handleongoing} className="ongoing_btn">Ongoing Events</button></li>
-                        <li><button onClick={handlePast} className="past_btn">Past Events</button></li>
+                    <ul className="flex w-fit flex-row border-b border-gray-400 border-opacity-50 [&>li]:px-3 [&>li>button]:text-blaack md:[&>li]:text-xl">
+                        <li><button onClick={handleUpcoming} className="upcoming_btn border-b border-black">Upcoming Events</button></li>
+                        <li><button onClick={handleongoing} className="ongoing_btn border-black">Ongoing Events</button></li>
+                        <li><button onClick={handlePast} className="past_btn border-black">Past Events</button></li>
                     </ul>
                 </div>
                 

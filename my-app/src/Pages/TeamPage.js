@@ -42,7 +42,7 @@ function TeamPage() {
     return (
         <>
             <div style={{ display: 'flex', textAlign: 'center', flexDirection: 'column', margin: "5%" }}>
-                <h1 className="text-white mt-8 text-5xl text-center font-extrabold">HEAD</h1>
+                <h1 className="text-black mt-8 text-5xl text-center font-extrabold">HEAD</h1>
                 <div style={{ display: 'flex', justifyContent: 'center' }}><Card3 name={"Vaibhav Mishra"} position={"Head"}></Card3></div>
                 {teams.map((team, index) => { return <Team team_name={team.Team_name} team_members={team.Team_members} key={index}></Team> })}
             </div>
