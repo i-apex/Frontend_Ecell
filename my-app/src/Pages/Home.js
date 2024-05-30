@@ -10,6 +10,7 @@ import photo3 from '../Assets/implement.jpg';
 import plane_img from '../Assets/paper_plane.jpg';
 import background_img from '../Assets/background.jpg'
 // import plane_svg from '../Assets/plane.svg';
+import './Home.css';
 
 const Home = () => {
     // const carouselElement = document.getElementById('carousel-example');
@@ -22,6 +23,7 @@ const Home = () => {
     ];
     return (
         <>
+
             <div className="w-100 absolute top-0 -z-10">
                 <img src={background_img} className="w-100 h-[100vh] object-cover opacity-[10%]"></img>
             </div>
@@ -47,13 +49,15 @@ const Home = () => {
 
             <h1 className="text-blue-700 mt-24 text-5xl text-center font-extrabold">OUR MOTTO</h1>
             <div className="flex justify-center flex-col md:flex-row">
-                <MottoCard logo={photo1} title={"IDEATE"} content={"We help students to identify problems all around us to propose a solution for creating a successful enterprise"} />
-                <MottoCard logo={photo2} title={"INNOVATE"} content={"Exposure to technology will bring in the Innovation”, that's exactly what we believe in"} />
-                <MottoCard logo={photo3} title={"IMPLEMENT"} content={"We help students to align themselves along the entrepreneurial lines  to turn their idea into reality."} />
+                <div className="zoom"><MottoCard logo={photo1} title={"IDEATE"} content={"We help students to identify problems all around us to propose a solution for creating a successful enterprise"} /></div>
+                <div className="zoom"> <MottoCard className="zoom" logo={photo2} title={"INNOVATE"} content={"Exposure to technology will bring in the Innovation”, that's exactly what we believe in"} /></div>
+                <div className="zoom"> <MottoCard className="zoom" logo={photo3} title={"IMPLEMENT"} content={"We help students to align themselves along the entrepreneurial lines  to turn their idea into reality."} /></div>
+               
+               
             </div>
             <h1 className="text-blue-700 mt-24 mb-16 text-5xl text-center font-extrabold">OUR VISION</h1>
-            <div className="flex justify-between py-16 pl-48 ">
-                <div className="w-96 h-96 p-4 mr-44">
+            <div className="grid place-items-center h-screen">
+                {/* <div className="w-96 h-96 p-4 mr-44"> */}
                     {/* <CCarousel controls indicators>
                         <CCarouselItem>
                             <CImage className=" w-100" src={photo1} alt="slide 1" />
@@ -65,7 +69,7 @@ const Home = () => {
                             <CImage className="w-100" src={photo3} alt="slide 1" />
                         </CCarouselItem>
                     </CCarousel> */}
-                </div>
+                {/* </div> */}
                 <div className="w-[50%] rounded-l-3xl text-white text-2xl pt-20 px-10 h-[50vh] bg-blue-700"></div>
             </div>
 
