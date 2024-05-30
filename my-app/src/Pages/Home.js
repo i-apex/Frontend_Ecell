@@ -36,8 +36,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <div className="bg-blue-700 flex justify-center w-[100%] h-[10vh] z-10">
-                <h1 className="text-white mt-8 absolute text-center text-xl md:text-5xl animate-[slideinY_1.3s_ease-in]">IDEATE  |  INNOVATE  |  IMPLEMENT</h1>
+            <div className="bg-blue-700 flex justify-center w-[100%] h-[10vh]">
+                <h1 className="text-white md:mt-[2vh] mt-[3vh] absolute text-center text-2xl md:text-5xl animate-[slideinY_1.3s_ease-in]">IDEATE  |  INNOVATE  |  IMPLEMENT</h1>
             </div>
             {/* <h2 className="text-black m-5 text-3xl font-mono">ABOUT US</h2>
             <p className="text-black m-5 md:w-2/4 text-lg animate-slidein">The morning sun cast a warm glow over the sleepy town, gently coaxing its inhabitants to rise and embrace the day. Birds chirped cheerfully, their melodies weaving through the tranquil air. In the distance, the faint aroma of freshly brewed coffee wafted from a quaint café, inviting passersby to indulge in its comforting embrace. It was a moment of quiet serenity, a pause in the hustle and bustle of life, where time seemed to slow down and the simple joys of existence took center stage.</p>

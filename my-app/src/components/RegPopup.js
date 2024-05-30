@@ -1,14 +1,14 @@
 import React from "react";
 const RegPopup = (props) => {
     return (props.trigger) ? (
-        <div className="w-full fixed top-0">
-            <div onClick={() => props.closePopup()} className="w-full h-dvh bg-black opacity-60 absolute top-0 flex justify-center"></div>
-            <div className="w-full flex justify-center ">
-                <div className="bg-black w-5/6 opacity-90 border absolute h-fit p-2 flex-col sm:w-5/6 md:w-3/4 lg:w-1/2 rounded-xl animate-fall  translate-y-80 ">
+        <div className="w-full z-[70]  fixed top-0">
+            <div onClick={() => props.closePopup()} className="w-full  h-dvh bg-black opacity-60 absolute top-0 flex justify-center"></div>
+            <div className="w-full flex  justify-center ">
+                <div className="w-5/6 opacity-90 border absolute backdrop-blur-sm bg-white/[0.6] h-fit p-2 flex-col sm:w-5/6 md:w-3/4 lg:w-1/2 rounded-xl animate-fall  translate-y-40 ">
                     <div className="w-full flex justify-between ">
                         <div></div>
                         <h1 className="text-2xl text-white">{props.eventName}</h1>
-                        <button onClick={() => props.closePopup()} type="button" class="bg-black rounded-md p-2 inline-flex items-center justify-center text-white hover:text-black-500 ">
+                        <button onClick={() => props.closePopup()} type="button" class="rounded-md p-2 inline-flex items-center justify-center text-white hover:text-black-500 ">
                             <span class="sr-only">Close menu</span>
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
