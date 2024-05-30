@@ -26,6 +26,7 @@ import photo21 from '../Assets/Untiteled20.jpg';
 import photo22 from '../Assets/Untiteled21.jpeg';
 import photo23 from '../Assets/Untiteled22.jpg';
 import photo24 from '../Assets/Untiteled23.jpg';
+import photo25 from '../Assets/Untiteled25.jpg';
 
 
 
@@ -34,7 +35,7 @@ const teams = [{ Team_name: "Management and Logistics Team", Team_members: [{ Na
 { Team_name: "Finance and Capital Team", Team_members: [{ Name: "D Vishnu Aravind", Position: "Lead", Photo: photo7 }, { Name: "Allu Sai Kowshik", Position: "Core Member", Photo: photo8 }, { Name: "Shruti Dhariya", Position: "Core Member", Photo: photo9 }] },
 { Team_name: "Public Relations and Outreach Team", Team_members: [{ Name: "Komminemi Sai Vignesh", Position: "Lead", Photo: photo22 }, { Name: "M Manukrishna", Position: "Core Member", Photo: photo22 }, { Name: "Yuvraj", Position: "Core Member", Photo: photo12 }] },
 { Team_name: "Branding and Promotions Team", Team_members: [{ Name: "Ajitesh Ghoregarekar", Position: "Lead", Photo: photo13 }, { Name: "Saumya Sinha", Position: "Core Member", Photo: photo14 }, { Name: "Siddhant Madhukar", Position: "Core Member", Photo: photo15 }] },
-{ Team_name: "Web Operations Team", Team_members: [{ Name: "Adnan Rizvi", Position: "Lead", Photo: photo22 }, { Name: "Tilak Reddy", Position: "Core Member", Photo: photo22 }, { Name: "Viramgama Jaimin", Position: "Core Member", Photo: photo22 }] },
+{ Team_name: "Web Operations Team", Team_members: [{ Name: "Adnan Rizvi", Position: "Lead", Photo: photo22 }, { Name: "Tilak Reddy", Position: "Core Member", Photo: photo25 }, { Name: "Viramgama Jaimin", Position: "Core Member", Photo: photo22 }] },
 { Team_name: "Community Management Team", Team_members: [{ Name: "Abhishek Anand", Position: "Lead", Photo: photo19 }, { Name: "Hemashree", Position: "Core Member", Photo: photo20 }, { Name: "Anupam Tripathi", Position: "Core Member", Photo: photo22 }] },
 { Team_name: "Media and Engagement Team", Team_members: [{ Name: "Shubham Ahirwar", Position: "Lead", Photo: photo22 }, { Name: "Manan Chavda", Position: "Core Member", Photo: photo23 }, { Name: " M. Harshit Reddy", Position: "Core Member", Photo: photo24 }] }];
 
