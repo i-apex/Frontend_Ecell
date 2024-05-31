@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Frontend_Ecell/static/css/main.e5a1c6c0.css",
+    "main.js": "/Frontend_Ecell/static/js/main.2777e767.js",
+    "static/js/453.ed3810f9.chunk.js": "/Frontend_Ecell/static/js/453.ed3810f9.chunk.js",
+    "static/media/Untiteled14.jpg": "/Frontend_Ecell/static/media/Untiteled14.ae6a9365fe11f1f32531.jpg",
+    "static/media/Untiteled7.jpg": "/Frontend_Ecell/static/media/Untiteled7.fe4260c615bb4816b79f.jpg",
+    "static/media/Untiteled23.jpg": "/Frontend_Ecell/static/media/Untiteled23.af88ba3fd2f743ed6b3f.jpg",
+    "static/media/Untiteled2.jpg": "/Frontend_Ecell/static/media/Untiteled2.fadfe6ef39621443449a.jpg",
+    "static/media/Untiteled12.jpg": "/Frontend_Ecell/static/media/Untiteled12.4fa996b5b6a8629719c0.jpg",
+    "static/media/Untiteled18.jpg": "/Frontend_Ecell/static/media/Untiteled18.0f17da1498b722ddea4d.jpg",
+    "static/media/Untiteled22.jpg": "/Frontend_Ecell/static/media/Untiteled22.1b9da134de1bc5c5b32e.jpg",
+    "static/media/Untiteled11.JPG": "/Frontend_Ecell/static/media/Untiteled11.22c84667a4cd95d67f14.JPG",
+    "static/media/Untiteled9.jpg": "/Frontend_Ecell/static/media/Untiteled9.000ac1aa2d9000c6f384.jpg",
+    "static/media/Untiteled13.jpg": "/Frontend_Ecell/static/media/Untiteled13.2738a55f2f5053308917.jpg",
+    "static/media/Untiteled25.jpg": "/Frontend_Ecell/static/media/Untiteled25.5d7067f9355c809cf2c6.jpg",
+    "static/media/Untiteled4.jpg": "/Frontend_Ecell/static/media/Untiteled4.a7cc82d86f7ed649c03b.jpg",
+    "static/media/Untiteled6.jpg": "/Frontend_Ecell/static/media/Untiteled6.26602f61f31dcc63467d.jpg",
+    "static/media/background.jpg": "/Frontend_Ecell/static/media/background.a35d4b3bcf5fab0aebb3.jpg",
+    "static/media/Untiteled19.jpg": "/Frontend_Ecell/static/media/Untiteled19.f99ee0ac229e21d8d8a3.jpg",
+    "static/media/Untiteled8.jpg": "/Frontend_Ecell/static/media/Untiteled8.f3d3c3b9ab4fbee18b7b.jpg",
+    "static/media/implement.jpg": "/Frontend_Ecell/static/media/implement.aed07080b135f0cfd9c2.jpg",
+    "static/media/Untiteled21.jpeg": "/Frontend_Ecell/static/media/Untiteled21.3b1aba9670cba547a325.jpeg",
+    "static/media/Untiteled.jpg": "/Frontend_Ecell/static/media/Untiteled.e53621003d3f51a213c7.jpg",
+    "static/media/Untiteled20.jpg": "/Frontend_Ecell/static/media/Untiteled20.baa895b7eb08c2c337f5.jpg",
+    "static/media/paper_plane.jpg": "/Frontend_Ecell/static/media/paper_plane.cbff5b18887f21dd0d7d.jpg",
+    "static/media/instagram_black.png": "/Frontend_Ecell/static/media/instagram_black.fbefbafeb09577a163b2.png",
+    "static/media/e_cell_logo.png": "/Frontend_Ecell/static/media/e_cell_logo.b8b721ffdc34a813d008.png",
+    "static/media/twitter_black.png": "/Frontend_Ecell/static/media/twitter_black.7e65d629bb3c5cf11c81.png",
+    "static/media/linkedin_black.svg": "/Frontend_Ecell/static/media/linkedin_black.744d1da6b918f26c4d62a9f724fbf369.svg",
+    "index.html": "/Frontend_Ecell/index.html",
+    "main.e5a1c6c0.css.map": "/Frontend_Ecell/static/css/main.e5a1c6c0.css.map",
+    "main.2777e767.js.map": "/Frontend_Ecell/static/js/main.2777e767.js.map",
+    "453.ed3810f9.chunk.js.map": "/Frontend_Ecell/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5a1c6c0.css",
+    "static/js/main.2777e767.js"
+  ]
+}
