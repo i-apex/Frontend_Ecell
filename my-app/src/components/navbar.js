@@ -38,7 +38,7 @@ export default function Navbar() {
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button class="bg-blue-800 text-white  transition-transform duration-300 font-bold w-fit flex flex-row justify-between py-2 mx-5 px-4 rounded-full">
                     <h1 className="text-lg h-fit">Login/Singup</h1>
-                </button>
+            </button>
               <button
                 data-collapse-toggle="navbar-sticky"
                 type="button"
