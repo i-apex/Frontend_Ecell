@@ -11,7 +11,7 @@ const Card3 = (props) => {
                     <div className="card">
 
                         <div className="card-image">
-                            <img src={photo} alt="profile one"/>
+                            <img src={props.photo} alt="profile one"/>
                         </div>
 
                         <ul className="social-icons">
