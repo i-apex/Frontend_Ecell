@@ -1,26 +1,35 @@
 import './App.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import TeamPage from './Pages/TeamPage';
-import EventsPage from './Pages/EventsPage';
-import InnovationsPage from './Pages/InnovationsPage';
-import BlogsPage from './Pages/BlogsPage';
-import Home from './Pages/Home';
-import { Routes, Route, Link } from 'react-router-dom';
-import Navbar from './components/navbar';
+import React, { useEffect, useState } from 'react';
 import Footer from './components/footer';
+import AdminUI from './AdminUI';
+import UserUI from './UserUI';
+import axios from 'axios';
+
 function App() {
+  const [userRole, setUserRole] = useState('user'); // Default to 'user'
+
+  useEffect(() => {
+    const fetchUserRole = async () => {
+      try {
+        const response = await axios.get('/userRole');
+        setUserRole(response.data.role);
+      } catch (error) {
+        if (error.response && error.response.status === 401) {
+          // Unauthorized, setting user role to 'user'
+          setUserRole('user');
+        } else {
+          console.error('Error fetching user role:', error);
+        }
+      }
+    };
+
+    fetchUserRole();
+  }, [userRole]);
+
   return (
     <>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='Team/' element={<TeamPage />}/>
-        <Route path='Events/' element={<EventsPage />}/>
-        <Route path='Innovations/' element={<InnovationsPage />}/>
-        <Route path='Blogs/' element={<BlogsPage />} />
-      </Routes>
-      <Footer></Footer>
+      {userRole === 'admin' ? <AdminUI /> : <UserUI />}
+      <Footer />
     </>
   );
 }

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './Navbar.css';
 
 import Logo from '../Assets/e_cell_logo.png'
+
+
 export default function Navbar() {
   const [showHamburger, setShowHamburger] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -36,8 +38,8 @@ export default function Navbar() {
               <span className="self-center mx-4 text-2xl font-extrabold whitespace-nowrap text-black">E-CELL</span>
             </a>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button class="bg-blue-800 text-white  transition-transform duration-300 font-bold w-fit flex flex-row justify-between py-2 mx-5 px-4 rounded-full">
-                    <h1 className="text-lg h-fit">Login/Singup</h1>
+            <button class="bg-blue-800 text-white  transition-transform duration-300 font-bold w-fit flex flex-row justify-between py-2 mx-5 px-4 rounded-full" >
+                    <Link to="/login" >Login/SignUp</Link>
             </button>
               <button
                 data-collapse-toggle="navbar-sticky"
