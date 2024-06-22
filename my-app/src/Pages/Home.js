@@ -7,6 +7,12 @@ import MottoCard from "../components/MottoCard";
 import photo1 from '../Assets/ideate.jpg';
 import photo2 from '../Assets/innovate.jpg';
 import photo3 from '../Assets/implement.jpg';
+import slide1 from '../Assets/IMG_2100.JPG';
+import slide2 from '../Assets/IMG_2324.jpg';
+import slide3 from '../Assets/IMG_2327.jpg';
+import slide4 from '../Assets/IMG_2577.jpg';
+import slide5 from '../Assets/DSC_6558.jpg';
+import slide6 from '../Assets/DSC_2594.jpg';
 import plane_img from '../Assets/paper_plane.jpg';
 import background_img from '../Assets/background.jpg'
 // import plane_svg from '../Assets/plane.svg';
@@ -56,21 +62,30 @@ const Home = () => {
                
             </div>
             <h1 className="text-blue-700 mt-24 mb-16 text-5xl text-center font-extrabold">OUR VISION</h1>
-            <div className="grid place-items-center h-screen">
-                {/* <div className="w-96 h-96 p-4 mr-44"> */}
-                    {/* <CCarousel controls indicators>
+            <div className="w-[90%] mx-auto flex justify-between h-fit">
+                <div className="w-2/3 mx-auto"> 
+                    <CCarousel controls indicators>
                         <CCarouselItem>
-                            <CImage className=" w-100" src={photo1} alt="slide 1" />
+                            <CImage src={slide1}/>
                         </CCarouselItem>
                         <CCarouselItem>
-                            <CImage className=" w-100" src={photo2} alt="slide 1" />
+                            <CImage src={slide2}/>  
+                        </CCarouselItem>
+                            <CCarouselItem>
+                            <CImage src={slide3}/>   
                         </CCarouselItem>
                         <CCarouselItem>
-                            <CImage className="w-100" src={photo3} alt="slide 1" />
+                            <CImage src={slide4}/> 
                         </CCarouselItem>
-                    </CCarousel> */}
-                {/* </div> */}
-                <div className="w-[50%] rounded-l-3xl text-white text-2xl pt-20 px-10 h-[50vh] bg-blue-700"></div>
+                        <CCarouselItem>
+                            <CImage src={slide5}/>   
+                        </CCarouselItem>
+                        <CCarouselItem>
+                            <CImage src={slide6}/>   
+                        </CCarouselItem>
+                    </CCarousel>
+                </div>
+                <div className="w-1/3 bg-gray-600 rounded-r-2xl"></div>
             </div>
 
             <h1 className="text-blue-700 mt-24 text-5xl text-center font-extrabold">INITIATIVES</h1>

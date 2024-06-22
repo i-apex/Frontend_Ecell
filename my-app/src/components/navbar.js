@@ -33,10 +33,13 @@ export default function Navbar() {
       <header className="z-[50] fixed top-0 w-full border-b backdrop-blur-sm bg-white/[0.1] border-neutral-200 dark:border-white/[0.1]">
         <nav className="">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-            <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <Link to="/">
+            <div className="flex items-center space-x-3 rtl:space-x-reverse">
               <img src={Logo} className="h-10 mt-1" alt="Flowbite Logo" />
               <span className="self-center mx-4 text-2xl font-extrabold whitespace-nowrap text-black">E-CELL</span>
-            </a>
+            </div>
+            </Link>
+            
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button class="bg-blue-800 text-white  transition-transform duration-300 font-bold w-fit flex flex-row justify-between py-2 mx-5 px-4 rounded-full" >
                     <Link to="/login" >Login/SignUp</Link>
