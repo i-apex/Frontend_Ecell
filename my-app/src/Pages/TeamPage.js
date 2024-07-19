@@ -28,16 +28,22 @@ import photo23 from '../Assets/Untiteled22.jpg';
 import photo24 from '../Assets/Untiteled23.jpg';
 import photo25 from '../Assets/Untiteled25.jpg';
 import photo26 from '../Assets/Untiteled26.jpeg';
+import photo27 from '../Assets/Untiteled27.jpg';
+import photo28 from '../Assets/Untiteled28.jpg';
+import photo29 from '../Assets/Untiteled29.jpg';
+import photo30 from '../Assets/Untiteled30.PNG';
+import photo0 from '../Assets/Untiteled0.png';
+import photo31 from '../Assets/Untiteled31.JPG';
+import photo32 from '../Assets/Untiteled32.jpg';
 
 
-
-const teams = [{ Team_name: "Management and Logistics Team", Team_members: [{ Name: "Hemant Gupta", Position: "Lead", Photo: photo1 }, { Name: "Shubham Mohanty", Position: "Core Member", Photo: photo22 }, { Name: "Shubham Verma", Position: "Core Member", Photo: photo3 }] },
-{ Team_name: "Event and Contents Team", Team_members: [{ Name: "Divij Gupta", Position: "Lead", Photo: photo22 }, { Name: "Ajinkya Pandey", Position: "Core Member", Photo: photo5 }, { Name: "Dasari Pranavesh Reddy", Position: "Core Member", Photo: photo22 }] },
+const teams = [{ Team_name: "Management and Logistics Team", Team_members: [{ Name: "Hemant Gupta", Position: "Lead", Photo: photo1 }, { Name: "Shubham Mohanty", Position: "Core Member", Photo: photo30 }, { Name: "Shubham Verma", Position: "Core Member", Photo: photo3 }] },
+{ Team_name: "Event and Contents Team", Team_members: [{ Name: "Divij Gupta", Position: "Lead", Photo: photo29 }, { Name: "Ajinkya Pandey", Position: "Core Member", Photo: photo5 }, { Name: "Dasari Pranavesh Reddy", Position: "Core Member", Photo: photo31 }] },
 { Team_name: "Finance and Capital Team", Team_members: [{ Name: "D Vishnu Aravind", Position: "Lead", Photo: photo7 }, { Name: "Allu Sai Kowshik", Position: "Core Member", Photo: photo8 }, { Name: "Shruti Dhariya", Position: "Core Member", Photo: photo9 }] },
-{ Team_name: "Public Relations and Outreach Team", Team_members: [{ Name: "Komminemi Sai Vignesh", Position: "Lead", Photo: photo22 }, { Name: "M Manukrishna", Position: "Core Member", Photo: photo22 }, { Name: "Yuvraj", Position: "Core Member", Photo: photo12 }] },
+{ Team_name: "Public Relations and Outreach Team", Team_members: [{ Name: "Komminemi Sai Vignesh", Position: "Lead", Photo: photo28 }, { Name: "M Manukrishna", Position: "Core Member", Photo: photo32 }, { Name: "Yuvraj", Position: "Core Member", Photo: photo12 }] },
 { Team_name: "Branding and Promotions Team", Team_members: [{ Name: "Ajitesh Ghoregarekar", Position: "Lead", Photo: photo13 }, { Name: "Saumya Sinha", Position: "Core Member", Photo: photo14 }, { Name: "Siddhant Madhukar", Position: "Core Member", Photo: photo15 }] },
 { Team_name: "Web Operations Team", Team_members: [{ Name: "Adnan Rizvi", Position: "Lead", Photo: photo22 }, { Name: "Tilak Reddy", Position: "Core Member", Photo: photo25 }, { Name: "Viramgama Jaimin", Position: "Core Member", Photo: photo26 }] },
-{ Team_name: "Community Management Team", Team_members: [{ Name: "Abhishek Anand", Position: "Lead", Photo: photo19 }, { Name: "Hemashree", Position: "Core Member", Photo: photo20 }, { Name: "Anupam Tripathi", Position: "Core Member", Photo: photo22 }] },
+{ Team_name: "Community Management Team", Team_members: [{ Name: "Abhishek Anand", Position: "Lead", Photo: photo19 }, { Name: "Hemashree", Position: "Core Member", Photo: photo20 }, { Name: "Anupam Tripathi", Position: "Core Member", Photo: photo27 }] },
 { Team_name: "Media and Engagement Team", Team_members: [{ Name: "Shubham Ahirwar", Position: "Lead", Photo: photo22 }, { Name: "Manan Chavda", Position: "Core Member", Photo: photo23 }, { Name: " M. Harshit Reddy", Position: "Core Member", Photo: photo24 }] }];
 
 function TeamPage() {
@@ -45,10 +51,9 @@ function TeamPage() {
         <>
             <div style={{ display: 'flex', textAlign: 'center', flexDirection: 'column', margin: "5%" }}>
                 <h1 className="text-blue-500 mt-8 text-5xl text-center font-extrabold">HEAD</h1>
-                <div style={{ display: 'flex', justifyContent: 'center' }}><Card3 name={"Vaibhav Mishra"} position={"Head"}></Card3></div>
+                <div style={{ display: 'flex', justifyContent: 'center' }}><Card3 name={"Vaibhav Mishra"} position={"Head"} photo={photo22}></Card3></div>
                 {teams.map((team, index) => { return <Team team_name={team.Team_name} team_members={team.Team_members} key={index}></Team> })}
             </div>
-
         </>
     );
 }
