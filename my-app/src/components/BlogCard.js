@@ -7,7 +7,7 @@ const BlogCard = (props) => {
     return (
         <div className="mx-auto h-screen flex items-center justify-center px-8">
             <div className="flex flex-col w-6/7 bg-gray-950 rounded shadow-lg sm:w-3/4 md:w-1/2 lg:w-3/6">
-                <div className="w-full h-64 bg-top bg-cover rounded-t" style={{ "background-image": "url(https://www.si.com/.image/t_share/MTY4MTkyMjczODM4OTc0ODQ5/cfp-trophy-deitschjpg.jpg)" }}></div>
+                <div className="w-full h-64 bg-top bg-cover rounded-t" style={{ "backgroundImage": "url(https://www.si.com/.image/t_share/MTY4MTkyMjczODM4OTc0ODQ5/cfp-trophy-deitschjpg.jpg)" }}></div>
                 <div className="flex flex-col w-full md:flex-row">
                     <div className="flex flex-col justify-around p-4 md:m-4 font-bold leading-none text-gray-800 uppercase bg-sky-400 md:rounded-3xl md:flex-col md:items-center md:justify-center md:w-1/4">
                         <div className="md:text-3xl md:p-1">Jan</div>

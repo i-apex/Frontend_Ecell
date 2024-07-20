@@ -41,7 +41,7 @@ export default function Navbar() {
             </Link>
             
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button class="bg-blue-800 text-white  transition-transform duration-300 font-bold w-fit flex flex-row justify-between py-2 mx-5 px-4 rounded-full" >
+            <button className="bg-blue-800 text-white  transition-transform duration-300 font-bold w-fit flex flex-row justify-between py-2 mx-5 px-4 rounded-full" >
                     <Link to="/login" >Login/SignUp</Link>
             </button>
               <button
@@ -67,7 +67,7 @@ export default function Navbar() {
                   <Link to="/Events" className="block py-2 px-3 hover:text-blue-800">Events</Link>
                 </li>
                 <li>
-                  <Link to="/Innovations" className="block py-2 px-3 hover:text-blue-800">Innovations</Link>
+                  <Link to="/Gallery" className="block py-2 px-3 hover:text-blue-800">Gallery</Link>
                 </li>
                 <li>
                   <Link to="/Blogs" className="block py-2 px-3 hover:text-blue-800">Blogs</Link>
