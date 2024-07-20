@@ -66,22 +66,22 @@ const Home = () => {
                 <div className="w-2/3 mx-auto"> 
                     <CCarousel controls indicators>
                         <CCarouselItem>
-                            <CImage src={slide1}/>
+                            <img className="h-[500px] w-full object-cover" src={slide1}/>
                         </CCarouselItem>
                         <CCarouselItem>
-                            <CImage src={slide2}/>  
+                        <img className="h-[500px] w-full object-cover" src={slide2}/> 
                         </CCarouselItem>
                             <CCarouselItem>
-                            <CImage src={slide3}/>   
+                            <img className="h-[500px] w-full object-cover" src={slide3}/>
                         </CCarouselItem>
                         <CCarouselItem>
-                            <CImage src={slide4}/> 
+                        <img className="h-[500px] w-full object-cover" src={slide4}/>
                         </CCarouselItem>
                         <CCarouselItem>
-                            <CImage src={slide5}/>   
+                        <img className="h-[500px] w-full object-cover" src={slide5}/>
                         </CCarouselItem>
                         <CCarouselItem>
-                            <CImage src={slide6}/>   
+                        <img className="h-[500px] w-full object-cover" src={slide6}/>
                         </CCarouselItem>
                     </CCarousel>
                 </div>

@@ -4,7 +4,7 @@ import Axios from 'axios';
 import ReactDOM from 'react-dom';
 import TeamPage from './Pages/TeamPage';
 import EventsPage from './Pages/EventsPage';
-import InnovationsPage from './Pages/InnovationsPage';
+import GalleryPage from './Pages/GalleryPage';
 import BlogsPage from './Pages/BlogsPage';
 import Home from './Pages/Home';
 import { Routes, Route, Link } from 'react-router-dom';
@@ -28,7 +28,7 @@ function UserUI() {
         <Route path='/' element={<Home />}/>
         <Route path='Team/' element={<TeamPage />}/>
         <Route path='Events/' element={<EventsPage />}/>
-        <Route path='Innovations/' element={<InnovationsPage />}/>
+        <Route path='Gallery/' element={<GalleryPage />}/>
         <Route path='Blogs/' element={<BlogsPage />} />
         <Route path='Login/' element={<Login />} />
       </Routes>

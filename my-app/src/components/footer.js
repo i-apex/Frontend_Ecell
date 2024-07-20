@@ -15,9 +15,9 @@ export default function Footer() {
             <div className='md:flex justify-between ml-0'>
                 <div className='md:w-1/3 [&>a]:md:text-3xl [&>a]:text-xl [&>a]:pb-2 [&>a]:block '>
                     <h1 className='text-2xl md:text-4xl pb-4 font-extrabold'>Quick links</h1>
-                    <Link to="/Events"><a>Events</a></Link>
-                    <Link to="/Team"><a>Team</a></Link>
-                    <Link to="/"><a>Collaborate</a></Link>
+                    <Link to="/Events">Events</Link>
+                    <Link to="/Team">Team</Link>
+                    <Link to="/">Collaborate</Link>
                     
                 </div>
                 <div className='md:w-1/3 my-10 md:my-0 text-center '>
@@ -36,7 +36,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className='flex justify-center mt-16 [&>img]:px-2 '>
-                            <a target='_blank' href='https://www.facebook.com/people/E-Cell-IIT-Tirupati/100064832861995/'><img src={facebook_logo} className='w-14 mt-0 mx-2' on></img></a>
+                            <a target='_blank' href='https://www.facebook.com/people/E-Cell-IIT-Tirupati/100064832861995/'><img src={facebook_logo} className='w-14 mt-0 mx-2'></img></a>
                             <a target='_blank' href='https://www.instagram.com/ecell_iitt/?next=%2F'><img src={instagram_logo} className='mx-2  w-12'></img></a>
                             <a target='_blank' href='https://x.com/ecell_iitt'><img src={X_logo} className='mt-1 mx-2'></img></a>
                             <a target='_blank' href='https://www.linkedin.com/company/e-cell-iit-tirupati/'><img src={linkedin_logo} className='p-0 w-14 mx-2'></img></a>
