@@ -18,7 +18,7 @@ const EventsInfo = [{name:"E-Auction",description:"E-AUCTION event was organized
 ]
 
 function EventsPage(props) {
-    const [currentEvent,setCurrentEvent] = useState("past_btn");
+    const [currentEvent,setCurrentEvent] = useState("upcoming_btn");
     const [regPopup, setRegpopup] = useState(false);
     const [eventName, setEventName] = useState("");
     const callPopup = (eventName) => {
@@ -54,20 +54,25 @@ function EventsPage(props) {
         })
 
     }
+    var numEvents = 0;
     return (
         <>
             <div >  
                 <RegPopup eventName={eventName} trigger={regPopup} closePopup={closePopup} />
-                <div className="font-bold tracking-wide md:text-4xl  text-vlack text-center mb-5 mt-14 md:mt-32">EVENTS</div>
+                <h1 className="text-blue-500 my-20  text-5xl text-center font-extrabold">Events</h1>
                 <div className=" w-full flex justify-center">
                     <ul className="flex w-fit flex-row border-b border-gray-400 border-opacity-50 [&>li]:px-3 [&>li>button]:text-blaack md:[&>li]:text-xl">
-                        <li><button onClick={handleUpcoming} className="upcoming_btn border-black">Upcoming Events</button></li>
+                        <li><button onClick={handleUpcoming} className="upcoming_btn border-b border-black">Upcoming Events</button></li>
                         <li><button onClick={handleongoing} className="ongoing_btn border-black">Ongoing Events</button></li>
-                        <li><button onClick={handlePast} className="past_btn border-b border-black">Past Events</button></li>
+                        <li><button onClick={handlePast} className="past_btn  border-black">Past Events</button></li>
                     </ul>
                 </div>
                 
-                {EventsInfo.map((eventinfo,index)=>{if(eventinfo.state==currentEvent.split("_")[0]) return <EventCard callPopup={callPopup} key={index}  eventName={eventinfo.name} eventInfo={eventinfo.description} img={eventinfo.photo}/>})}
+                {EventsInfo.map((eventinfo,index)=>{if(eventinfo.state==currentEvent.split("_")[0]){
+                    numEvents++;
+                    return <EventCard callPopup={callPopup} key={index}  eventName={eventinfo.name} eventInfo={eventinfo.description} img={eventinfo.photo}/>   
+                }})}
+                {numEvents==0 && <div className="mb-72 mt-12"><h1 className="text-center">No {currentEvent.split("_")[0]} events.</h1></div>}
             </div>
         </>
     );
