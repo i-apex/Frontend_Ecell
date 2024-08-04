@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link} from 'react-router-dom';
 import './Navbar.css';
+import { useLocation } from 'react-router-dom';
 
 import Logo from '../Assets/e_cell_logo.png'
 
 
 export default function Navbar() {
+  let location = useLocation();
   const [showHamburger, setShowHamburger] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -61,19 +63,19 @@ export default function Navbar() {
             <div className={`items-center justify-between ${isOpen ? 'flex' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
               <ul className="flex flex-col pb-3 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
                 <li>
-                  <Link to="/" className="block py-2 px-3 hover:text-blue-800">Home</Link>
+                  <Link to="/" className={`block py-2 px-3 ${location.pathname=='/' && 'text-blue-800'} hover:text-blue-800`}>Home</Link>
                 </li>
                 <li>
-                  <Link to="/Events" className="block py-2 px-3 hover:text-blue-800">Events</Link>
+                  <Link to="/Events" className={`block py-2 px-3 ${location.pathname=='/Events' && 'text-blue-800'} hover:text-blue-800`}>Events</Link>
                 </li>
                 <li>
-                  <Link to="/Gallery" className="block py-2 px-3 hover:text-blue-800">Gallery</Link>
+                  <Link to="/Gallery" className={`block py-2 px-3 ${location.pathname=='/Gallery' && 'text-blue-800'} hover:text-blue-800`}>Gallery</Link>
                 </li>
                 <li>
-                  <Link to="/Blogs" className="block py-2 px-3 hover:text-blue-800">Blogs</Link>
+                  <Link to="/Blogs" className={`block py-2 px-3 ${location.pathname=='/Blogs' && 'text-blue-800'} hover:text-blue-800`}>Blogs</Link>
                 </li>
                 <li>
-                  <Link to="/Team" className="block py-2 px-3 hover:text-blue-800 ">Team</Link>
+                  <Link to="/Team" className={`block py-2 px-3 ${location.pathname=='/Team' && 'text-blue-800'} hover:text-blue-800`}>Team</Link>
                 </li>
               </ul>
             </div>

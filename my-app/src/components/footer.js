@@ -14,11 +14,22 @@ export default function Footer() {
         <div className="bg-blue-700 p-4 pb-0 text-white" id="footer">
             <div className='md:flex justify-between ml-0'>
                 <div className='md:w-1/3 [&>a]:md:text-3xl [&>a]:text-xl [&>a]:pb-2 [&>a]:block '>
-                    <form>
+                    <form noValidate>
                         <h1 className='text-2xl md:text-xl pb-4 md:mt-1 font-extrabold'>SUBSCRIBE TO OUR NEWSLETTER</h1>
-                        <input type='text' placeholder='EMAIL ADDRESS' className='w-[70%] bg-transparent focus:outline-none placeholder-white/[0.9] border-b-2'/>
-                        <button className="bg-white text-blue-700 [&>svg]:hover:translate-x-2 m duration-1000 font-bold w-fit flex flex-row justify-evenly py-1 my-4 pr-3 rounded-full">
-                    <h1 className="text-lg mt-[2px] h-fit  pt-1 pr-2 pl-4">SUBSCRIBE</h1><svg fill="#1d4ed8" className="w-fill h-10 " viewBox="0 0 24 24">
+                        <input type='email' id='subscribeEmail' placeholder='EMAIL ADDRESS' className='w-[70%] bg-transparent focus:outline-none placeholder-white/[0.9] border-b-2'/>
+                        <p id='subscribeEmailError' className='hidden text-xs'>*Please enter a valid email id</p>
+                        <button type='submit' onClick={(e)=>{
+                            // e.preventDefault();
+                            const emailInput = document.getElementById('subscribeEmail');
+                            const emailError = document.getElementById('subscribeEmailError');
+                            if(!emailInput.value.includes("@")){
+                                e.preventDefault();
+                                emailError.style.display = "block";
+                            }else{
+                                emailError.style.display = "none";
+                            }
+                        }} className="bg-white text-blue-700 [&>svg]:hover:translate-x-2 hover:scale-105 [&>svg]:duration-500 duration-500 font-bold w-fit flex flex-row justify-evenly py-1 my-4 pr-3 rounded-full">
+                    <h1 className="text-lg mt-[0px] h-fit  pt-1 pr-2 pl-4">SUBSCRIBE</h1><svg fill="#1d4ed8" className="h-9 " viewBox="0 0 24 24">
                         <path clipRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fillRule="evenodd" />
                     </svg>
                 </button>
@@ -42,10 +53,10 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className='flex justify-center mt-16 [&>img]:px-2 '>
-                            <a target='_blank' href='https://www.facebook.com/people/E-Cell-IIT-Tirupati/100064832861995/'><img src={facebook_logo} className='w-14 mt-0 mx-2'></img></a>
-                            <a target='_blank' href='https://www.instagram.com/ecell_iitt/?next=%2F'><img src={instagram_logo} className='mx-2  w-12'></img></a>
-                            <a target='_blank' href='https://x.com/ecell_iitt'><img src={X_logo} className='mt-1 mx-2'></img></a>
-                            <a target='_blank' href='https://www.linkedin.com/company/e-cell-iit-tirupati/'><img src={linkedin_logo} className='p-0 w-14 mx-2'></img></a>
+                            <a target='_blank' href='https://www.facebook.com/people/E-Cell-IIT-Tirupati/100064832861995/'><img src={facebook_logo} className=' mt-0 h-9 mx-2'></img></a>
+                            <a target='_blank' href='https://www.instagram.com/ecell_iitt/?next=%2F'><img src={instagram_logo} className='mx-2 h-9'></img></a>
+                            <a target='_blank' href='https://x.com/ecell_iitt'><img src={X_logo} className='h-9 mx-2'></img></a>
+                            <a target='_blank' href='https://www.linkedin.com/company/e-cell-iit-tirupati/'><img src={linkedin_logo} className='p-0 h-9 mx-2'></img></a>
                         </div>
 
                     </div>
